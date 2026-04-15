@@ -1,0 +1,19 @@
+# Visual Studio Code # 
+.vscode/*
+
+# Environments 
+env
+.venv
+
+# Installer logs 
+pip-log.txt 
+pip-delete-this-directory.txt
+Pipfile.lock
+
+# Fast API #
+*.log
+*.pot
+*.pyc
+.mypy_cache
+__pycache__
+test.db

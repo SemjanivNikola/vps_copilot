@@ -1,0 +1,8 @@
+{
+    "tabWidth": 4,
+    "useTabs": false,
+    "singleQuote": true,
+    "insertFilanNewLine": true,
+    "maxEndOfLine": 120,
+    "objectWrap": "collapse"
+}
