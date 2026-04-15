@@ -1,8 +1,9 @@
 from fastapi import APIRouter
+from app.services.system_services import get_system_metrics
 
 router = APIRouter()
 
 
-@router.get("/")
+@router.get('/')
 def metrics():
-    return {"metics_status": "OK"}
+    return get_system_metrics()
