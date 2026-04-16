@@ -5,7 +5,14 @@ from app.api.router import api_router
 
 load_dotenv()
 
-app = FastAPI(title="VPS Agent")
+"""
+Disable the automatic docs endpoints in production until needed. If needed internaly protect them behind auth
+"""
+app = FastAPI(title="VPS Agent",
+              docs_url=None,
+              redoc_url=None,
+              openapi_url=None,
+              )
 
 app.include_router(api_router, prefix="/api")
 
